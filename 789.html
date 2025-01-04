@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Embed</title>
+    <style>
+        /* Iframe'ni responsive qilish */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Play</h1>
+    <div class="video-container">
+        <iframe 
+            src="https://mega.nz/embed/WUwRzBgK#0SzOSfPzgfnY_tIA8I2715bokVRT2_hOqi0gLdSa2Q4" 
+            allowfullscreen 
+            allow="autoplay;">
+        </iframe>
+    </div>
+</body>
+</html>
